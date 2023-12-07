@@ -60,6 +60,9 @@ def studentIdCall(request,myid):
     studentid = Student_M.objects.filter(id=myid)
     return render(request,"student/editstudent.html", {'stu':studentid})
 
+
+
+
 def teacherPage(request):
     
     teacher = Teacher_M.objects.all()
